@@ -16,6 +16,7 @@ short-description: Sequential impulse constraint solver
         canvas = createCanvas(width, height);
         canvas.parent("sketch");
         canvas.elt.oncontextmenu = () => false;
+        canvas.elt.style = "width: 100%;";
     }
 </script>
 <script src="https://cdn.jsdelivr.net/gh/JentGent/2D-physics-engine@latest/demos/random/main.js"></script>
