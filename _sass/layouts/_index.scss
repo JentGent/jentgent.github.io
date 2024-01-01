@@ -4,7 +4,7 @@
   display: inline-block;
   width: 100%;
   background-size: cover;
-  font-size: 1.2em;
+  font-size: 1.5rem;
   text-align: center;
   color: $text-color;
   background-position:center center;
@@ -12,7 +12,6 @@
     display:block;
     width:100%;
     a {
-      font-size:0.8em;
       text-transform: uppercase;
       color:#6b6b6b;
       img {
@@ -44,7 +43,7 @@
       display: inline-block;
       margin:0 0.5em;
       a {
-        font-size:2em;
+        font-size:3rem;
         margin:0 0.25em 2em;
         color: $link-color;
       }
@@ -105,7 +104,7 @@
         @extend %link-hover;
       }
       strong {
-        font-size:1.4em;
+        font-size:2rem;
         margin-bottom:0.5em;
         font-weight:600;
       }

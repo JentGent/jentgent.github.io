@@ -7,7 +7,7 @@ order: 4
 ---
 
 <div class="work">
-  <h2>Videos</h2>
+  <!-- <h2>Videos</h2> -->
   {% for project in site.portfolio %}
     {% if project.type == "video" %}
       <div class="project">

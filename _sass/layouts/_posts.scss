@@ -16,7 +16,7 @@ article {
     @extend %link-hover;
   }
   .footnotes {
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
   p {
     img {
@@ -35,7 +35,7 @@ header {
   }
   .meta {
     color: rgba($text-color, .8);
-    font-size: 0.8em;
+    font-size: 0.8rem;
     letter-spacing: 0.1em;
     margin: 0;
     text-transform: uppercase;
