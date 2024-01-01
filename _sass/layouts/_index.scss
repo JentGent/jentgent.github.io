@@ -1,6 +1,6 @@
 // Header text feature
 .call-out {
-  padding: 5% 0 1% 0;
+  padding: 1% 0 1% 0;
   display: inline-block;
   width: 100%;
   background-size: cover;
@@ -81,7 +81,7 @@
 
 // Work listing
 .work {
-  @extend %padding-regular;
+  padding: 0;
   background-size: $feature-image-size;
   text-align: center;
   display: block;
