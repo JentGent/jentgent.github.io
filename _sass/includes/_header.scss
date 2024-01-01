@@ -1,12 +1,15 @@
 .site-header {
   @extend %padding-small;
-  background: $brand-color;
+  background: linear-gradient(180deg, $brand-color, $background-color);
   border-top:5px solid $header-desc-background-color;
   display: inline-block;
   width: 100%;
 
   a {
     color: $header-link-color;
+  }
+  a:hover {
+    color: darken($header-link-color, 10%);
   }
 
   .avatar {
@@ -19,12 +22,17 @@
   }
 
   .site-title {
-    font-weight: bold;
-    font-size: 1em;
+    // font-weight: bold;
+    font-weight: 900;
+    font-size: 2em;
     line-height: 1.5;
+  }
+  .title {
+    font-weight: 900;
   }
 
   .site-nav {
+    font-size: 1.2em;
     ul {
       margin: 0;
       padding: 0;

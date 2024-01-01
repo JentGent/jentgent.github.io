@@ -10,21 +10,21 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <h1>Witty & Hilarious Rails Developer</h1>
-     <p>I'm a kickass developer specializing in Rails, AngularJS, and MongoDB.</p>
+     <h1 class="title">JentGent</h1>
+     <p>AI/ML, 3D graphics, game development; HTML, JavaScript, Python</p>
   header_text_feature_image:
-  footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
+  # footer_text: >
+  #  Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
 
   # Icons
   rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address: "jentaculargent@gmail.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
-  github: # github profile name, e.g. "madebymunsters"
+  github: "JentGent" # github profile name, e.g. "madebymunsters"
   google_plus:
   instagram:
   linkedin:  # Full URL
@@ -36,7 +36,8 @@ theme_settings:
   tumblr:
   twitter:
   wordpress:
-  youtube:
+  itch: "jentgent"
+  youtube: "https://www.youtube.com/channel/UCwGxA3K5k8mqA3XXr0uVGcw"
 
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
@@ -53,17 +54,17 @@ theme_settings:
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Lato:300,400,700,300italic,700italic|Abril+Fatface"
-
-# PAGINATION
-paginate: 100
-paginate_path: "blog/page:num"
+  # google_fonts: "Lato:300,400,700,300italic,700italic|Abril+Fatface"
+  google_fonts: "Lato:300,400,700,300italic,700italic|Montserrat:300,400,700,300italic,700italic,900"
 
 # COLLECTIONS
 collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
+  demos:
+    output: true
+    permalink: /demos/:path/
 
 # BUILD SETTINGS
 markdown: kramdown
@@ -71,6 +72,3 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: :compressed
-
-gems:
-  - jekyll-paginate

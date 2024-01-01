@@ -1,4 +1,10 @@
-<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+<script src="/js/main.js"></script>
+
+<div class="call-out site-footer" style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
+  <ul>
+    {% include icons.html %}
+  </ul>
+</div>
 
 {% if site.theme_settings.footer_text %}
 <footer class="site-footer">

@@ -1,6 +1,9 @@
 ---
 layout: post
-title: Markdown and HTML
+parent: "posts"
+title: First post
+feature-img: "/img/sample_feature_img.png"
+hidden: true
 ---
 
 Jeykll supports the use of [Markdown](http://daringfireball.net/projects/markdown/syntax) with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.
@@ -44,7 +47,7 @@ while (j < 20) {
 }
 {% endhighlight %}
 
-Type Theme uses KaTeX to display maths. Equations such as $$S_n = a \times \frac{1-r^n}{1-r}$$ can be displayed inline.
+Type Theme uses KaTeX to display maths. Equations such as $ S_n = a \times \frac{1-r^n}{1-r} $ can be displayed inline.
 
 Alternatively, they can be shown on a new line:
 

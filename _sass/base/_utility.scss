@@ -1,25 +1,26 @@
 // Mix-ins
 %padding-small {
-  padding: $padding-x-small $padding-x-small * 2;
+  padding: $padding-x-small $padding-x-small * 2 $padding-x-small $padding-x-small * 2;
   @media (max-width: 1000px) {
     padding: $padding-x-small $padding-x-small;
   }
 }
 %padding-regular {
-  padding: $padding-small $padding-large;
+  padding: $padding-small;
   @media (max-width: 1000px) {
     padding: $padding-small * 1.5 calc($padding-large / 1.6);
   }
 }
 %padding-header {
-  padding: 1% $padding-large 0;
+  padding: 0;
+  margin: 0;
   @media (max-width: 1000px) {
     padding: 1% calc($padding-large / 1.6) 0;
   }
 }
 %link-hover {
   text-decoration: underline;
-  color: darken($link-color, 15%);
+  color: darken($link-color, 10%);
 }
 // Buttons
 .button {
