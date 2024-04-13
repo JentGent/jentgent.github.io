@@ -357,15 +357,15 @@ function eq8() {
     if(u.length === 1) {
         u = u[0];
         if(u === theta) {
-            result.innerHTML += "<br>" + ("<br>theta = atan2(vᵢᵧ, vₓ)");
+            result.innerHTML += "<br>" + ("<br>θ = atan2(vᵢᵧ, vₓ)");
             theta.value = Math.atan2(viy.value, vx.value);
-            result.innerHTML += "<br>" + (`theta = atan2(${viy.value}, ${vx.value})`);
+            result.innerHTML += "<br>" + (`θ = atan2(${viy.value}, ${vx.value})`);
         }
     }
     else if(!u.length) {
         if(Math.abs(Math.atan2(viy.value, vx.value) - theta.value) > THRESHOLD) {
             result.innerHTML += "<br><br>ERROR in equation:";
-            result.innerHTML += "<br>theta = atan2(vᵢᵧ, vₓ)";
+            result.innerHTML += "<br>θ = atan2(vᵢᵧ, vₓ)";
             alert("Conflicting answers; try again.");
         }
     }
