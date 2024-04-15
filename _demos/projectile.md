@@ -375,7 +375,7 @@ function eq9() {
     if(u.length === 1) {
         u = u[0];
         if(u === viy && start.value === "unknown") return;
-        if((u === vi && vx.value > vi.value) || (u === vx && vy.value > vi.value)) {
+        if((u === viy && vx.value > vi.value) || (u === vx && vy.value > vi.value)) {
             result.innerHTML += "<br><br>NO SOLUTION for equation:";
             result.innerHTML += "<br>vᵢ² = vₓ² + vᵢᵧ²";
             return alert("No solution; try again.");
