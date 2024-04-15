@@ -161,7 +161,7 @@ function eq1() {
             break;
             case t:
                 t.value = (-viy.value + Math.sqrt(viy.value * viy.value + 2 * a * y.value) * (end.value === "falling" ? -1 : 1)) / a;
-                result.innerHTML += "<br>" + (`t = (-${viy.value} ${end.value === "falling" ? "-" : "+"} sqrt(${viy.value}² + 2 * ${a} * ${y.value})) / ${a}`);
+                result.innerHTML += "<br>" + (`t = (-${viy.value} ${end.value === "falling" ? "-" : "+"} √(${viy.value}² + 2 * ${a} * ${y.value})) / ${a}`);
         }
     }
     else if(!u.length) {
@@ -217,12 +217,12 @@ function eq3() {
             case vy:
                 vy.value = Math.sqrt(viy.value * viy.value + 2 * a * y.value) * (end.value === "falling" ? -1 : 1);
                 updateStartAndEnd()
-                result.innerHTML += "<br>" + (`vᵧ = ${end.value === "falling" ? "-" : ""}sqrt(${viy.value}² + 2 * ${a} * ${y.value})`);
+                result.innerHTML += "<br>" + (`vᵧ = ${end.value === "falling" ? "-" : ""}√(${viy.value}² + 2 * ${a} * ${y.value})`);
             break;
             case viy:
                 viy.value = Math.sqrt(vy.value * vy.value - 2 * a * y.value) * (start.value === "falling" ? -1 : 1);
                 updateStartAndEnd()
-                result.innerHTML += "<br>" + (`vᵢᵧ = ${start.value === "falling" ? "-" : ""}sqrt(${vy.value}² - 2 * ${a} * ${y.value})`);
+                result.innerHTML += "<br>" + (`vᵢᵧ = ${start.value === "falling" ? "-" : ""}√(${vy.value}² - 2 * ${a} * ${y.value})`);
             break;
             case y:
                 y.value = (vy.value * vy.value - viy.value * viy.value) / 2 / a;
@@ -384,15 +384,15 @@ function eq9() {
         switch(u) {
             case vi:
                 vi.value = Math.sqrt(vx.value * vx.value + viy.value * viy.value);
-                result.innerHTML += "<br>" + (`vᵢ = sqrt(${vx.value}² + ${viy.value}²)`);
+                result.innerHTML += "<br>" + (`vᵢ = √(${vx.value}² + ${viy.value}²)`);
             break;
             case viy:
                 viy.value = Math.sqrt(vi.value * vi.value - vx.value * vx.value) * (start.value === "falling" ? -1 : 1);
-                result.innerHTML += "<br>" + (`vᵢᵧ = ${start.value === "falling" ? "-" : ""}sqrt(${vi.value}² - ${vx.value}²)`);
+                result.innerHTML += "<br>" + (`vᵢᵧ = ${start.value === "falling" ? "-" : ""}√(${vi.value}² - ${vx.value}²)`);
             break;
             case vx:
                 vx.value = Math.sqrt(vi.value * vi.value - viy.value * viy.value);
-                result.innerHTML += "<br>" + (`vₓ = sqrt(${vi.value}² - ${viy.value}²)`);
+                result.innerHTML += "<br>" + (`vₓ = √(${vi.value}² - ${viy.value}²)`);
             break;
         }
     }
