@@ -266,7 +266,7 @@ order: 1
     function addLineNumbers() {
         const codeContainer = document.getElementById("code-container");
         let lineNumbers = "1";
-        const lines = codeContainer.innerHTML.split("\n");
+        const lines = codeContainer.innerText.split("\n");
         const table = document.createElement("table");
         table.id = "code-table";
         for (let i = 0; i < lines.length; i++) {
