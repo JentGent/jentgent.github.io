@@ -6,11 +6,9 @@ feature-img: "img/color.png"
 order: 2
 ---
 
-{:.center}
-Some little apps I coded to run in the browser.
-
 <div class="work">
-  {% for project in site.demos %}
+  {% assign demos = site.demos | sort: "order" %}
+  {% for project in demos %}
   <div class="project">
     <a class="project-thumb" style="width: 300px;" href="{{ project.url }}">
       <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>

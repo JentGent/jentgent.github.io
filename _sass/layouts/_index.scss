@@ -83,17 +83,19 @@
   padding: 0;
   background-size: $feature-image-size;
   text-align: center;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   float: left;
   width: 100%;
   .project {
     display: block;
     float: left;
-    clear:both;
-    width:100%;
+    clear: both;
+    width: fit-content;
+    position: relative;
     margin:2em auto;
     .project-thumb {
-      // width: 100%;
+      width: 100%;
       // float: left;
       margin-bottom: 0.5em;
       display: inline-block;
@@ -116,8 +118,11 @@
       }
     }
     .project-description {
-      width:100%;
-      float:left;
+      // width:100%;
+      left: 0;
+      right: 0;
+      position: absolute;
+      // float:left;
       text-align: center;
       margin-bottom: 0;
       // display: inline-block;
@@ -129,5 +134,4 @@
       margin-top: 1em;
     }
   }
-  
 }

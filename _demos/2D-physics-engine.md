@@ -4,6 +4,7 @@ title: 2D physics engine
 parent: "demos"
 thumbnail-path: "/img/demos/2D-physics-engine/thumbnail.png"
 short-description: Sequential impulse constraint solver
+order: 2
 
 ---
 

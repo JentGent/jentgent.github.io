@@ -4,16 +4,17 @@ title: Code Tracer
 parent: "demos"
 thumbnail-path: "/img/demos/tracer/thumbnail.png"
 short-description: Track variables line by line
+order: 1
 
 ---
 
 <style>
     #code-container {
         border-radius: 1em;
-        background-color: rgb(200, 200, 200);
+        background-color: rgb(50, 50, 70);
         align-self: flex-end;
         margin-right: 0.5em;
-        color: rgb(100, 100, 100);
+        color: rgb(180, 200, 220);
     }
     #code {
         text-align: left;
@@ -37,7 +38,7 @@ short-description: Track variables line by line
         text-align: left;
     }
     .code-row:hover {
-        background-color: rgb(220, 220, 200);
+        background-color: rgba(255, 255, 0, 0.1);
     }
     article {
         padding: 0 5% 50px;
@@ -49,7 +50,7 @@ short-description: Track variables line by line
         text-align: center;
         padding: 0.2em;
         border: 0px;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     th {
         text-decoration: underline;
@@ -58,7 +59,7 @@ short-description: Track variables line by line
         width: 100%;
     }
     button {
-        padding: 0.2em;
+        padding: 0.25em;
     }
     input {
         text-align: center;
@@ -66,7 +67,7 @@ short-description: Track variables line by line
 </style>
 
 <div id="first" style="text-align: center;">
-    First, paste your code here:
+    Paste your code here:
 </div>
 <div class="group">
     <pre class="group-element" id="code-container" contentEditable="plaintext-only"></pre>
@@ -87,9 +88,16 @@ short-description: Track variables line by line
     <button onclick="startTracing()">start tracing</button>!
 </div>
 
+
+{:.center}
+<button onclick="restart();" id="new-trace" hidden>New Trace</button>
+
 <script>
     let currentStep;
     const steps = [];
+    function restart() {
+        window.location.reload();
+    }
     function getCodeRow(line) {
         return document.getElementById("code-table").children[line - 1];
     }
@@ -141,7 +149,7 @@ short-description: Track variables line by line
             getCodeRow(this.line).style.backgroundColor = "";
             this.line = line;
             this.lineNumEl.innerHTML = line;
-            getCodeRow(line).style.backgroundColor = "rgb(240, 240, 200)";
+            getCodeRow(line).style.backgroundColor = "rgba(255, 255, 0, 0.2)";
         }
         addRemove(variable) {
             const cell = document.createElement("td");
@@ -187,7 +195,7 @@ short-description: Track variables line by line
                 }
             }
 
-            getCodeRow(this.line).style.backgroundColor = "rgb(240, 240, 200)";
+            getCodeRow(this.line).style.backgroundColor = "rgba(255, 255, 0, 0.2)";
 
             for (let i = tableBottom.cells.length - 1; i >= 1; i--) {
                 tableBottom.cells[i].remove();
@@ -292,6 +300,7 @@ short-description: Track variables line by line
         steps[steps.length - 1].enter();
     }
     function startTracing() {
+        document.getElementById("new-trace").hidden = false;
         showTable();
         lockCode();
         addLineNumbers();
