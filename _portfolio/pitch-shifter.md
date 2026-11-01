@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Making a pitch shifter
-parent: "projects"
+parent: "videos"
 thumbnail-path: "https://img.youtube.com/vi/PjKlMXhxtTM/0.jpg"
 short-description: Exploring SOLA, the STFT, and the phase vocoder
 type: "video"

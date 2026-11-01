@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Arithmetic coding and ANS
-parent: "projects"
+parent: "videos"
 thumbnail-path: "https://img.youtube.com/vi/RFWJM8JMXBs/0.jpg"
 short-description: Fractional-bit compression
 type: "video"

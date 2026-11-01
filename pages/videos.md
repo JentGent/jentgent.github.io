@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Videos
+permalink: /videos/
 feature-img: "img/color.png"
 order: 4
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Paxos Protocol
-parent: "projects"
+parent: "videos"
 thumbnail-path: "https://img.youtube.com/vi/ILnDotVVPLA/0.jpg"
 short-description: The hardest problem in distributed systems
 type: "video"
