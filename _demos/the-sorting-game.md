@@ -49,6 +49,7 @@ order: 2
 
 
 <script src="https://cdn.jsdelivr.net/gh/JentGent/2D-physics-engine@latest/demos/libraries/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
 <script>
     let canvas, width = 1200, height = 600;
     function setup() {
@@ -56,6 +57,12 @@ order: 2
         canvas.parent("sketch");
         canvas.elt.oncontextmenu = () => false;
         canvas.elt.style = "width: 100%;";
+    }
+    let selectSound, sortSound, winSound;
+    function preload() {
+        selectSound = loadSound("/content/the-sorting-game-select.wav");
+        sortSound = loadSound("/content/the-sorting-game-sort.wav");
+        winSound = loadSound("/content/the-sorting-game-win.wav");
     }
 </script>
 <script>
@@ -350,6 +357,7 @@ function compare(nodes) {
         if (!change) break;
     }
     if (chains.length === 1 && chains[0].nodes.length === N) {
+        winSound.play();
         winAnimation -= WIN_ANIMATION_RATIO;
     }
 }
@@ -366,11 +374,15 @@ function mousePressed() {
             selected.push(node);
             node.isSelected = true;
         }
+        console.log('hi"');
+        selectSound.play();
         break;
     }
 }
 function doComparison() {
     if (!(selected.length >= 2)) return;
+    sortSound.rate(random(0.9, 1.3));
+    sortSound.play();
     compare(selected);
     for (let i = 0; i < selected.length; i++) {
         selected[i].isSelected = false;
