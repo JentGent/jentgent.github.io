@@ -4,7 +4,7 @@ title: Projectile Motion Calculator
 parent: "demos"
 thumbnail-path: "/img/demos/projectile/thumbnail.png"
 short-description: Physics tool
-order: 4
+order: 8
 
 ---
 

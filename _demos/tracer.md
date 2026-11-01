@@ -4,7 +4,7 @@ title: Code Tracer
 parent: "demos"
 thumbnail-path: "/img/demos/tracer/thumbnail.png"
 short-description: Track variables line by line
-order: 1
+order: 7
 
 ---
 

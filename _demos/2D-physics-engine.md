@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2D physics engine
+title: 2D Physics Engine
 parent: "demos"
 thumbnail-path: "/img/demos/2D-physics-engine/thumbnail.png"
 short-description: Sequential impulse constraint solver
@@ -17,14 +17,13 @@ order: 3
         canvas = createCanvas(width, height);
         canvas.parent("sketch");
         canvas.elt.oncontextmenu = () => false;
-        canvas.elt.style = "width: 100%;";
     }
 </script>
 <script src="https://cdn.jsdelivr.net/gh/JentGent/2D-physics-engine@latest/demos/random/main.js"></script>
 <div id="sketch" class="demo"></div>
 
-<br/><br/>
-
 {:.center}
-A demo of my custom 2D physics engine (<a href="https://github.com/JentGent/2D-physics-engine" target="_blank">GitHub</a>).  
-Left click to grab; right click to pull.
+<br>
+A demo of my custom 2D physics engine.  
+Left click to grab; right click to pull.  
+<a href="https://github.com/JentGent/2D-physics-engine" target="_blank">GitHub link</a>

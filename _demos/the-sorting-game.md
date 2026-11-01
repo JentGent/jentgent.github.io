@@ -4,7 +4,7 @@ title: The Sorting Game
 parent: "demos"
 thumbnail-path: "/img/demos/the-sorting-game/thumbnail.png"
 short-description: Sort like a computer
-order: 2
+order: 5
 
 ---
 
